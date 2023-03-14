@@ -1,0 +1,33 @@
+use sowjanya;
+drop table empLOYEE;
+create table employee(eid int(5),ename varchar(10),e_sal decimal,e_Account varchar(20));
+insert into employee values(123,"sowji",10000,"talentpool");
+insert into employee values(124,"A",20000,"bank");
+insert into employee values(125,"Ab",30000,"E-COMMERCE");
+insert into employee values(126,"ABC",40000,"TRAINING");
+insert into employee values(127,"ABCD",50000,"BENCH");
+SELECT * FROM EMPLOYEE;
+
+ALTER TABLE employee ADD(E_DESIGNATION VARCHAR(30));
+
+SET SQL_SAFE_UPDATES=0;
+
+UPDATE EMPLOYEE SET E_DESIGNATION="SOFTWARE DEVELOPER" WHERE eid=123;
+UPDATE EMPLOYEE SET E_DESIGNATION=" DEVELOPER-2" WHERE eid=124;
+UPDATE EMPLOYEE SET E_DESIGNATION="SOFTWARE ENGINEER" WHERE eid=125;
+UPDATE EMPLOYEE SET E_DESIGNATION="GRADUATE TARAINEE" WHERE eid=126;
+UPDATE EMPLOYEE SET E_DESIGNATION="ASSOCIATE ENGINEER" WHERE eid=127;
+
+SELECT * FROM EMPLOYEE;
+
+ALTER TABLE  EMPLOYEE RENAME TO EMP;
+
+SELECT * FROM EMP;
+
+
+
+
+
+
+
+
