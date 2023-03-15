@@ -1,0 +1,4 @@
+1. Create an employee table with employee age,employee name and employee salary in sql .Write a program to fetch the employee details from sql by using JDBC concept.
+2.Create a Customer table with customer name ,customer address ,customer mobile number and customer email.Write a program to fetch the details of customer details 
+from sql by using JDBC concept.
+3. create a table Greeting with greet1 ,greet2 and repeat in java class and insert the values and fetch the deatils of greetings by using JDBC concept.
