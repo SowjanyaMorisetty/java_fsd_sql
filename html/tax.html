@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BANK</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
+</head>
+
+<body>
+
+    <label>principle Loan Amount</label><br>
+    <input type="text" id="principle" placeholder="Principle">
+    <br>
+    
+    <label>Interest Rate(%)</label><br>
+    <input type="text" id="interest" placeholder="Rate of the interest(%)">
+    <br>
+    <label>Tenure(in months)</label><br>
+    <input type="text" id="months" placeholder="months">
+    <br>
+  
+      <input id="Estimate" type="button" value="Estimate" onclick="EstimateReducingInterestLoan()">
+  
+  <br>
+    
+  
+  
+    
+    <table border="1">
+      <caption><b>Loan Estimation</b></caption>
+      <thead>
+      <tr>
+          <th>Details</th>
+          <th>Reducing Interest Loan</th>
+          <th>Fixed Interest Loan</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+          <td>Total Interest Rs.</td>
+          <td>
+              <output id="tInterest"></output>
+          </td>
+          <td>
+              <output id="tInterestFixed"></output>
+          </td>
+      </tr>
+      <tr>
+          <td>Total Payment Rs.</td>
+          <td>
+              <output id="tPayment"></output>
+          </td>
+          <td>
+              <output id="tPaymentFixed"></output>
+          </td>
+      </tr>
+      <tr>
+          <td>Monthly EMI Rs.</td>
+          <td>
+              <output id="EMI"></output>
+          </td>
+          <td>
+              <output id="EMIFixed"></output>
+          </td>
+      </tr>
+      </tbody>
+  </table>
+
+<script src="tax.js"></script>
+</body>
+</html>

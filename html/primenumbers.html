@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>hi</title>
+</head>
+<body>
+  <!-- <button id="calculate_button" onclick="primeFactorsTo(8)">Calculate</button>
+  <br>
+
+<div id="outputdiv">
+    <label>Simple Interest is : <span id="outputspan"></span></label>
+  </div> -->
+  
+<script>
+  var outputspan = document.getElementById("outputspan");
+    function primeFactorsTo(max)
+{
+    var store  = [], i, j, primes = [];
+    for (i = 2; i <= max; ++i) 
+    {
+        if (!store [i]) 
+          {
+            primes.push(i);
+            for (j = i << 1; j <= max; j += i) 
+            {
+                store[j] = true;
+            }
+        }
+    }
+    return primes;
+    outputspan.innerHTML=primes;
+}
+
+
+console.log(primeFactorsTo(5));
+
+console.log(primeFactorsTo(15));
+</script>
+</body>
+</html>

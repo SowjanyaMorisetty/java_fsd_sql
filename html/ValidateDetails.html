@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html{
+                background-color: beige;
+            }
+            html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+text-justify: auto;
+text-decoration: solid;
+    display: table-cell;
+    vertical-align: middle;
+}
+    #form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      
+    }
+    
+    #employee-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #ccc;
+      max-width: 500px;
+      width: 100%;
+    }
+    
+    
+    #employee-form h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      text-align: center;
+    }
+    
+    #employee-form label {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    
+    #employee-form input {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    #employee-form button {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #008CBA;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+  </style>
+    
+  </head>
+  
+ 
+ <body>
+    <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+       <table cellspacing = "2" cellpadding = "2" border = "1">
+          
+          <tr>
+             <td align = "right">Name</td>
+             <td><input type = "text" name = "Name" /></td>
+          </tr>
+          
+          <tr>
+             <td align = "right">EMail</td>
+             <td><input type = "text" name = "EMail" /></td>
+          </tr>
+          
+          <tr>
+             <td align = "right">Zip Code</td>
+             <td><input type = "text" name = "Zip" /></td>
+          </tr>
+
+          
+          <tr>
+             <td align = "right">Country</td>
+             <td>
+                <select name = "Country">
+                   <option value = "-1" selected>[choose yours]</option>
+                   <option value = "1">USA</option>
+                   <option value = "2">UK</option>
+                   <option value = "3">INDIA</option>
+                </select>
+             </td>
+          </tr>
+
+          <tr>
+            <td align = "right">Password</td>
+            
+              <td><input type="text" name="Password"/></td>
+            </td>
+          </tr>
+
+          <tr>
+            <td align = "right">CPassword</td>
+            
+              <td><input type="text" name="CPassword"/></td>
+            </td>
+          </tr>
+          
+          <tr>
+             <td align = "right"></td>
+             <td><input type = "submit" value = "Submit" /></td>
+          </tr>
+          
+       </table>
+    </form> 
+    <script type="text/javascript" src="validate.js"></script>  
+ </body>
+</html>
